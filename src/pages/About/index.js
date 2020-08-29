@@ -24,7 +24,7 @@ export default function About() {
             <AboutMeBlurb />
             <Header size="small">
               <a
-                href={`${process.env.PUBLIC_URL}/resume8.20.pdf`}
+                href={"../../public/resume8.20.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
