@@ -1,0 +1,14 @@
+#about-me {
+  margin: 50px;
+  font-family: "Crimson Text", serif;
+  font-size: 25px;
+}
+
+#about-header {
+  font-family: "Lobster", cursive;
+  margin-left: 40px;
+}
+
+#profile-pic {
+  border-radius: 15px;
+}
