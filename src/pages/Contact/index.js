@@ -48,8 +48,9 @@ export default function Contact() {
             control="input"
             placeholder="Your name"
             onChange={(e) => setMessage({ ...message, name: e.target.value })}
+            value={message.name}
           />
-          value={message.name}
+
           <Form.Input
             label="email"
             control="input"
