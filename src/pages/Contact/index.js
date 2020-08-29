@@ -12,7 +12,7 @@ export default function Contact() {
     buttonText: "Send Message",
   });
 
-  handleReset = () => {
+  const handleReset = () => {
     setMessage({
       name: "",
       message: "",
@@ -21,7 +21,7 @@ export default function Contact() {
     });
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setMessage({ ...message, buttonText: "zooming..." });
     let data = {
