@@ -30,7 +30,7 @@ export default function Contact() {
       email: message.email,
     };
     axios
-      .post("https://emily-wirtz.vercel.app/", data)
+      .post("https://node-api.ewirtz3.vercel.app/", data)
       .then((res) => {
         setMessage({ ...message, sent: true }, handleReset());
       })
