@@ -22,6 +22,7 @@ export default function Contact() {
   };
 
   const handleSubmit = (e) => {
+    console.log(`e:>>`, e);
     e.preventDefault();
     setMessage({ ...message, buttonText: "zooming..." });
     let data = {
