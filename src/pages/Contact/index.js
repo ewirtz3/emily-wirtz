@@ -34,8 +34,8 @@ export default function Contact() {
       .then((res) => {
         setMessage({ ...message, sent: true }, handleReset());
       })
-      .catch(() => {
-        console.log(`Message not sent`);
+      .catch((err) => {
+        console.log((`Message not sent: `, err));
       });
   };
 
