@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import NoMatch from "./pages/NoMatch";
 import Footer from "./components/Footer";
+import "./style.css";
 
 function App() {
   return (

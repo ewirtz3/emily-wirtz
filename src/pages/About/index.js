@@ -24,7 +24,7 @@ export default function About() {
             <AboutMeBlurb />
             <Header size="small">
               <a
-                href={"../../public/resume8.20.pdf"}
+                href={"./EmilyWirtz82720.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
