@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Button,
-  Form,
-  Container,
-  TextArea,
-  Segment,
-} from "./node_modules/semantic-ui-react";
+import { Button, Form, Container, TextArea, Segment } from "semantic-ui-react";
 import "../assets/css/Contact.css";
 import axios from "axios";
 

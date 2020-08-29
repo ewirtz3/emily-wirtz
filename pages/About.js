@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Header,
-  Grid,
-  Image,
-  Segment,
-} from "./node_modules/semantic-ui-react";
+import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "../assets/css/About.css";
 import AboutMeBlurb from "../components/AboutMe/AboutMe";
 import profilePic from "../components/AboutMe/profilePic.jpg";

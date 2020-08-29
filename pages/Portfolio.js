@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Segment, Header } from "./node_modules/semantic-ui-react";
+import { Container, Segment, Header } from "semantic-ui-react";
 import PortfolioCards from "../components/PortfolioCards/PortfolioCards";
 import "../assets/css/Portfolio.css";
 
