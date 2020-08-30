@@ -9,7 +9,7 @@ export default function Contact() {
     message: "",
     email: "",
     sent: false,
-    buttonText: "Send Message",
+    buttonText: "send message",
   });
 
   const handleReset = () => {
@@ -17,22 +17,28 @@ export default function Contact() {
       name: "",
       message: "",
       email: "",
-      buttonText: "Message Sent",
+      buttonText: "message sent",
     });
   };
 
   const handleSubmit = (e) => {
     console.log(`e:>>`, e);
+    console.log(`message:>>`, message);
     e.preventDefault();
     setMessage({ ...message, buttonText: "zooming..." });
+    console.log(`message:>>`, message);
     let data = {
       name: message.name,
       message: message.message,
       email: message.email,
     };
+    console.log(`data:>>`, data);
+    const proxyUrl = "https://boiling-hollows-94393.herokuapp.com/";
+    const url = "https://node-api-woad.vercel.app/api/v1";
     axios
-      .post("https://node-api.ewirtz3.vercel.app/", data)
+      .post(`${proxyUrl}/${url}`, data)
       .then((res) => {
+        console.log(`res:>>`, res);
         setMessage({ ...message, sent: true }, handleReset());
       })
       .catch((err) => {
@@ -62,13 +68,18 @@ export default function Contact() {
           <Form.Field
             control={TextArea}
             label="message"
-            placeholder="Your message"
+            placeholder={"Your message"}
             onChange={(e) =>
               setMessage({ ...message, message: e.target.value })
             }
             value={message.message}
           />
-          <Form.Field control={Button} content="Submit" basic color="yellow" />
+          <Form.Field
+            control={Button}
+            content={message.buttonText}
+            basic
+            color="yellow"
+          />
         </Form>
       </Segment>
     </Container>
