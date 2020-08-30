@@ -22,7 +22,7 @@ Click the link above to view my profile!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Big ups to this @gmrsagar for helping me get the contact form to email me with the user's message: https://hackernoon.com/setting-up-a-serverless-contact-form-in-react-using-nodemailer-and-express-19df9fdb20ed
+Big ups to @gmrsagar for helping me get the contact form to email me with the user's message: https://hackernoon.com/setting-up-a-serverless-contact-form-in-react-using-nodemailer-and-express-19df9fdb20ed
 
 ## License
 
