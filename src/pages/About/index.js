@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "./About.css";
 import AboutMeBlurb from "../../components/AboutMe";
-import profilePic from "../../components/AboutMe/profilePic.jpg";
+import profilePic from "./profilePic.jpg";
+import resume from "./EmilyWirtz82720.pdf";
 
 export default function About() {
   return (
@@ -24,7 +25,7 @@ export default function About() {
             <AboutMeBlurb />
             <Header size="small">
               <a
-                href={`${process.env.PUBLIC_URL}/EmilyWirtz82720.pdf`}
+                href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
