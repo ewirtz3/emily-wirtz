@@ -13,12 +13,14 @@ export default function Contact() {
   });
 
   const handleReset = () => {
+    console.log(`handleReset:>>`, handleReset);
     setMessage({
       name: "",
       message: "",
       email: "",
       buttonText: "message sent",
     });
+    console.log(`message:>>`, message);
   };
 
   const handleSubmit = (e) => {
