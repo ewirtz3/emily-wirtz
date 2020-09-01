@@ -13,14 +13,12 @@ export default function Contact() {
   });
 
   const handleReset = () => {
-    console.log(`handleReset:>>`, handleReset);
     setMessage({
       name: "",
       message: "",
       email: "",
-      buttonText: "message sent",
+      buttonText: "message sent!",
     });
-    console.log(`message:>>`, message);
   };
 
   const handleSubmit = (e) => {
@@ -41,7 +39,8 @@ export default function Contact() {
       .post(`${proxyUrl}/${url}`, data)
       .then((res) => {
         console.log(`res:>>`, res);
-        setMessage({ ...message, sent: true }, handleReset());
+        setMessage({ ...message, sent: true });
+        handleReset();
       })
       .catch((err) => {
         console.log((`Message not sent: `, err));
