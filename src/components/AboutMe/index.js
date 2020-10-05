@@ -14,7 +14,9 @@ export default function AboutMeBlurb() {
         to code has been an enormous exercise in using both to piece a new
         language together. I love that there will always be somethng new to
         learn, and different ways to make existing languages do innovative
-        things.
+        things. My strengths for now are React.js, JavaScript, and CSS. I'm also
+        working on honing my skills using HTML, jQuery, MongoDB, Sequelize, OOP,
+        and the MERN stack.
       </p>
       <p>
         Before I started my journey into coding, I worked my way through the
@@ -34,12 +36,14 @@ export default function AboutMeBlurb() {
         My experiences have allowed me to travel quite a bit, having lived in
         Omaha, San Francisco, and Costa Rica. I also spent a month completing a
         500-mile pilgrimage across Spain known as the Camino de Santiago. Now, I
-        am about to complete a Fullstack Coding Boot Camp through the University
-        of Kansas, and I can't wait to see where coding will take me next.
+        am about to complete a Full Stack Coding Boot Camp through the
+        University of Kansas, and I can't wait to see where coding will take me
+        next.
       </p>
       <p>
         <em>Please feel free to reach out, I would love to hear from you!</em>
       </p>
+      <p>Email: ewirtz3@gmail.com</p>
     </>
   );
 }
