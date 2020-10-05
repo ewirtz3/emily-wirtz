@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function MenuDropdown() {
   return (
     <Dropdown
-      text="new branch"
+      text="menu"
       icon="code branch"
       labeled
       button

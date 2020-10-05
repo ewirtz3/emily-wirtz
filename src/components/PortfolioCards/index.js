@@ -1,15 +1,26 @@
 import React from "react";
-import { Card, Image } from "semantic-ui-react";
+import { Card, Image, Container } from "semantic-ui-react";
 import "./PortfolioCards.css";
 import weatherDashPic from "./weatherDashPic.jpg";
 import inOrOutPic from "./inOrOut (1).jpg";
 import burgerPic from "./burger.jpg";
 import DirectoryPic from "./userDirectory.jpg";
 import projectYou from "./projectYou.jpg";
-import noteTaker from "./noteTaker.jpg";
+import jobSpot from "./jobSpotScreenShot.png";
 
 export default function PortfolioCards() {
   const projects = [
+    {
+      name: "JobSpot",
+      description:
+        "On the hunt for your next job? Ditch the Excel sheet and use JobSpot to keep your search organized and up-to-date!",
+      repoLink: "https://github.com/Anverch/JobSpot",
+      appLink: "https://job-spot.herokuapp.com",
+      imageSrc: jobSpot,
+      imageAlt: "Job search tracking app",
+      technologies:
+        "React.js, Passport.js, Express.js, Express-Sessions, Sequelize, MySQL, Semantic UI, JavaScript, Node.js, Bcrypt.js, Axios",
+    },
     {
       name: "Weather Dashboard",
       description:
@@ -18,6 +29,8 @@ export default function PortfolioCards() {
       appLink: "https://ewirtz3.github.io/weather-dashboard/",
       imageSrc: weatherDashPic,
       imageAlt: "Weather Dashboard App",
+      technologies:
+        "Moment.js, Local Storage, AJAX, OpenWeather API, JavaScript",
     },
     {
       name: "Inside or Outside?",
@@ -27,6 +40,8 @@ export default function PortfolioCards() {
       appLink: "https://ewirtz3.github.io/inside-or-outside/",
       imageSrc: inOrOutPic,
       imageAlt: "Cocktails or Weather app",
+      technologies:
+        "OpenWeather API, TheCocktailDB API, Bulma.io, Flexbox, Moment.js, JavaScript",
     },
     {
       name: "Burger Bonanza App",
@@ -36,6 +51,8 @@ export default function PortfolioCards() {
       appLink: "https://intense-dusk-43049.herokuapp.com/",
       imageSrc: burgerPic,
       imageAlt: "Burger Builder App",
+      technologies:
+        "Express.js, Express Handlebars, Sequelize, MySQL, Node.js, Heroku, JavaScript",
     },
     {
       name: "Dynamic Employee Directory",
@@ -45,6 +62,7 @@ export default function PortfolioCards() {
       appLink: "https://various-employees.herokuapp.com/",
       imageSrc: DirectoryPic,
       imageAlt: "Employee Directory App",
+      technologies: "React.js, AJAX, Axios, JavaScript",
     },
     {
       name: "projectYOU",
@@ -54,48 +72,49 @@ export default function PortfolioCards() {
       appLink: "https://projectyou.herokuapp.com/",
       imageSrc: projectYou,
       imageAlt: "Fitness Tracker App",
-    },
-    {
-      name: "Note Taker",
-      description:
-        "This app enables the user to write, save, and delete notes. Application utilizes Express.js to give user full CRUD method capabilities, writing, reading, updating, and deleting data to/from a JSON file.",
-      repoLink: "https://github.com/ewirtz3/note-taker",
-      appLink: "https://stark-meadow-19348.herokuapp.com/",
-      imageSrc: noteTaker,
-      imageAlt: "Note Taker App",
+      technologies:
+        "Node.js, Express.js, MySQL, Sequelize, Express Handlebars, Heroku",
     },
   ];
 
   return (
-    <Card.Group id="portfolio-cards">
-      {projects.map((project, i) => {
-        return (
-          <Card key={i}>
-            <Image src={project.imageSrc} wrapped />
-            <Card.Content>
-              <Card.Header>{project.name}</Card.Header>
-              <Card.Description>{project.description}</Card.Description>
-            </Card.Content>
-            <Card.Content extra>
-              <a
-                href={project.appLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View application
+    <Container>
+      <Card.Group id="portfolio-cards">
+        {projects.map((project, i) => {
+          return (
+            <Card centered key={i}>
+              <a href={project.appLink} target="_blank">
+                <Image src={project.imageSrc} wrapped />
               </a>
-              <br />
-              <a
-                href={project.repoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View project repository
-              </a>
-            </Card.Content>
-          </Card>
-        );
-      })}
-    </Card.Group>
+              <Card.Content>
+                <Card.Header>{project.name}</Card.Header>
+                <Card.Description>{project.description}</Card.Description>
+                <br />
+                <Card.Description>
+                  <strong>Technologies used:</strong> {project.technologies}
+                </Card.Description>
+              </Card.Content>
+              <Card.Content extra>
+                <a
+                  href={project.appLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View application
+                </a>
+                <br />
+                <a
+                  href={project.repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View project repository
+                </a>
+              </Card.Content>
+            </Card>
+          );
+        })}
+      </Card.Group>
+    </Container>
   );
 }

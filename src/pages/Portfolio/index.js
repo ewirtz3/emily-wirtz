@@ -7,10 +7,12 @@ export default function Portfolio() {
   return (
     <Container id="portfolio-container">
       <Segment raised centered="true" id="portfolio-segment">
-        <Header size="large" id="portfolio-header">
-          Portfolio
-        </Header>
-        <Header sub>Check out my work, both solo and as part of a team</Header>
+        <Container textAlign="center">
+          <Header size="large">
+            Check out my work, both solo and as part of a team
+          </Header>
+        </Container>
+        <br />
         <PortfolioCards />
       </Segment>
     </Container>
