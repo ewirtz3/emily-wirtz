@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <Container>
       <Segment centered raised id="contact-segment">
-        <Form size="big" onSubmit={(e) => handleSubmit(e)}>
+        <Form size="big" onSubmit={(e) => handleSubmit(e)} data-netlify="true">
           <Form.Input
             label="name"
             control="input"

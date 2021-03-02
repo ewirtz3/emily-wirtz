@@ -3,7 +3,7 @@ import { Container, Header, Grid, Image, Segment } from "semantic-ui-react";
 import "../assets/css/About.css";
 import AboutMeBlurb from "../components/AboutMe/AboutMe";
 import profilePic from "../components/AboutMe/profilePic.jpg";
-import resume from "../components/AboutMe/resume 7-2020 (1).pdf";
+import resume from "../public/EmilyWirtz_030121.pdf";
 
 export default function About() {
   return (

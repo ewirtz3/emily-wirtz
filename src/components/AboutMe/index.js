@@ -11,14 +11,14 @@ export default function AboutMeBlurb() {
         Kansas.
       </p>
       <p>
-        I am a Full Stack Web Developer based in Kansas City, but open to
-        relocating. I enjoy problem solving and critical thinking, and learning
-        to code has been an enormous exercise in using both to piece a new
-        language together. I love that there will always be somethng new to
-        learn, and different ways to make existing languages do innovative
-        things. My strengths for now are React.js, JavaScript, and CSS. I'm also
-        working on honing my skills using HTML, jQuery, MongoDB, Sequelize, OOP,
-        and the MERN stack.
+        I am a Software Engineer based in Kansas City, but open to relocating. I
+        enjoy problem solving and critical thinking, and learning to code has
+        been an enormous exercise in using both to piece a new language
+        together. I love that there will always be somethng new to learn, and
+        different ways to make existing languages do innovative things. My
+        strengths for now are React.js, JavaScript, and CSS. I'm also working on
+        honing my skills using HTML, jQuery, MongoDB, Sequelize, OOP, and the
+        MERN stack.
       </p>
       <p>
         Before I started my journey into coding, I worked my way through the
