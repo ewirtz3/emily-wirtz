@@ -13,7 +13,7 @@ export default function Welcome() {
           emily wirtz
         </Header>
         <Header sub as="h5">
-          Full Stack Web Developer
+          Software Engineer
           <Link to={process.env.PUBLIC_URL + "/about"}>
             <Icon
               link
