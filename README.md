@@ -4,7 +4,7 @@
 
 This my official and ongoing portfolio site project. Created with React.js and deployed to GitHub pages.
 
-Link to project: https://emily-wirtz.vercel.app/
+Link to project: https://emilywirtz.com
 
 <img src="https://img.shields.io/github/last-commit/ewirtz3/emily-wirtz?style=for-the-badge"/>
 
